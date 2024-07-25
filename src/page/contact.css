@@ -51,17 +51,18 @@
 }
 
 
-input::placeholder, textarea::placeholder, input{
-    color: var(--text-color);
+input::placeholder, textarea::placeholder{
+    color: rgba(255, 255, 255, 0.7) !important;
     padding-left: 2px;
+}
+
+input, textarea{
+    color: var(--text-color);
+    border-radius: 5px;
 }
 
 textarea{
     min-height: 80px;
-    border-radius: 5px;
-}
-.contact-item input{
-    border-radius: 5px;
 }
 
 .classFooter{
