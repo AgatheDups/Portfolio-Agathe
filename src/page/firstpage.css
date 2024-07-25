@@ -1,0 +1,54 @@
+/* FirstPage */
+
+header{
+  width: 100%;
+  min-height: 100vh;
+  display:flex; 
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 30;
+}
+  
+.firstpage-video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.text-first-page{
+  color: #f1f1f1;
+  margin-bottom: 1rem;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50px);
+}
+  
+.btn-firstPage{
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-firstPage a{
+  font-size: 15px;
+  color: #f1f1f1;
+}
+
+.ligne{
+  width: 2px;
+  height: 0px;
+  background-color: var(--background-color);
+  margin-bottom: 1rem;
+}

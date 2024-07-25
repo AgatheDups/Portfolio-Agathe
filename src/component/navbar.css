@@ -1,0 +1,33 @@
+/* Navbar */
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 50;
+}
+  
+.listNavLink{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display:flex; 
+  justify-content: center; 
+  align-items: center;  
+}
+  
+.NavLink{
+  text-decoration: none;
+  margin: 1rem 0.5rem;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.NavLink:hover{
+  border-radius: 5px;
+  background: var(--background-color-card);
+  text-decoration: underline;
+}

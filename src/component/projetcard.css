@@ -1,0 +1,73 @@
+/* Projet card */
+
+.card{
+    background: var(--background-color-card);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    border: 1px solid #5e94a5;
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+
+.card-body{
+    padding: 0;
+}
+
+.card-title{
+    min-height: 50px;
+}
+  
+h5, p{
+    color: var(--text-color) !important;
+}
+  
+.img-card{
+    width: 50%;
+}
+  
+.project-features p{
+    margin: 0;
+}
+  
+.project-features{
+    margin-bottom: 10px;
+}
+  
+.logo-btn-card{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-github{
+    margin-top: auto !important;
+}
+
+.logo-skills-card{
+    max-width: 130px;
+    max-height: 80px;
+}
+
+@media screen and (max-width: 1300px) {
+    .card{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .card{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .card{
+        width: 80%;
+    }
+}
