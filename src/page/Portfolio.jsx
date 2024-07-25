@@ -44,8 +44,7 @@ export default function Portfolio (){
                     srcImgCards={["../public/logo-html.png","../public/logo-css.png","../public/logo-bootstrap.png"]}
                     altImgCards={["Logo html","Logo css","Logo bootstrap"]}
                     features={["Utilisation de bootstrap","Site responsive"]}
-                    linkBtnGithub={"#"}
-                     // mettre le lien
+                    linkBtnGithub={"https://github.com/AgatheDups/SiteDWWM.git"}
                 />
                 <ProjetCard 
                     titleCard={"Site d'information sur des peintres"}
