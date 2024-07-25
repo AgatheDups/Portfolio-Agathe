@@ -53,8 +53,7 @@ export default function Portfolio (){
                     srcImgCards={["../public/logo-html.png","../public/logo-css.png","../public/logo-js.png","../public/logo-bootstrap.png"]}
                     altImgCards={["Logo html","Logo css","Logo javascript","Logo bootstrap"]}
                     features={["Utilisation de javasript pour les animations","Utilisation de bootstrap","Site responsive"]}
-                    linkBtnGithub={"#"}
-                    // mettre le lien
+                    linkBtnGithub={"https://github.com/AgatheDups/Atelier-Les-Artistes-Boostrap.git"}
                 />
             </div>
             <Footer/>
