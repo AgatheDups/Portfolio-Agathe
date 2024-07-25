@@ -26,8 +26,7 @@ export default function Portfolio (){
                     srcImgCards={["../public/logo-html.png","../public/logo-css.png","../public/logo-js.png","../public/logo-react.png","../public/logo-bootstrap.png"]}
                     altImgCards={["Logo html","Logo css","Logo javascript","Logo react","Logo bootstrap"]}
                     features={["Animations","Page de contact"]}
-                    linkBtnGithub={"#"}
-                    // mettre le lien
+                    linkBtnGithub={"https://github.com/AgatheDups/Portfolio-Agathe.git"}
                 />
                 <ProjetCard 
                     titleCard={"Simulation de particules"}
