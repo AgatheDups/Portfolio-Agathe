@@ -1,18 +1,38 @@
 /* eslint-disable react/prop-types */
+import { useRef } from "react";
 import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import "./contact.css"
+import emailjs from '@emailjs/browser';
 
 export default function Contact (){
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs
+        .sendForm('service_6yjr2vm', 'template_io72mpb', form.current, {
+          publicKey: 'ZlnVL4Dadk8igzUm9',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
+
     return (
         <div>
             <video className="bg-video" autoPlay loop muted src="/assets/fond-first-page.mp4" />
             <NavBar/>
             <div className="content" id="content-contact">
                 <div className="info-contact col-md-5">
-                    <a href="mailto:agathe.dps@hotmail.com">
+                    <a href="mailto:agathe.dupuis.pro@gmail.com">
                         <img className="icon-contact" src="/assets/icon-envelope.png" />
-                        agathe.dps@hotmail.com
+                        agathe.dupuis.pro@gmail.com
                     </a>
                     <a href="tel:0674802697">
                         <img className="icon-contact" src="/assets/icon-phone.png" />
@@ -24,9 +44,9 @@ export default function Contact (){
                     </a>
                 </div>
                 <div className="info-contact col-md-5">
-                    <form action="" className="contact-item">
-                        <input type="text" id="name" name="name" placeholder="Nom" required/>
-                        <input type="email" id="email" name="email" placeholder="Email" required/>
+                    <form ref={form} className="contact-item" onSubmit={sendEmail}>
+                        <input type="text" id="name" name="from_name" placeholder="Nom" required/>
+                        <input type="email" id="email" name="from_mail" placeholder="Email" required/>
                         <input type="text" id="subject" name="subject" placeholder="Sujet" required/>
                         <textarea id="message" name="message" placeholder="Message" required/>
                         <button type="submit" className="btn btn-danger">Envoyer</button>

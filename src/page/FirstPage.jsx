@@ -2,12 +2,14 @@
 import { useEffect, useRef } from 'react';
 import "./firstpage.css"
 import gsap from 'gsap';
+import { useNavigate } from 'react-router-dom';
 
 export default function FirstPage() {
     const titreRef = useRef(null);
     const ligneRef = useRef(null);
     const subtitleRef = useRef(null);
     const btnRef = useRef(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const TL = gsap.timeline();
@@ -24,7 +26,12 @@ export default function FirstPage() {
             <div className="ligne" ref={ligneRef}></div>
             <p ref={subtitleRef} className="text-first-page">Bienvenu sur mon CV</p>
             <video className='firstpage-video' autoPlay loop muted src="/assets/fond-first-page.mp4" />
-            <button className="btn-firstPage btn btn-danger" ref={btnRef}><a href="/acceuil">Voir plus</a></button>
+            <button onClick={()=> goToHome()} className="btn-firstPage btn btn-danger" ref={btnRef}><a>Voir plus</a></button>
         </header>
     );
+
+
+    function goToHome(){
+        navigate("/acceuil");
+    }
 }
