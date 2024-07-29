@@ -40,7 +40,7 @@ export default function Portfolio (){
                 />
                 <ProjetCard 
                     titleCard={"Site Afpa formation DWWM TEST"}
-                    srcImgCardProjet={"/public/logo-afpa.jpg"}
+                    srcImgCardProjet={"/assets/logo-afpa.jpg"}
                     altImgCardProjet={"Logo du site FluffyRagdoll"}
                     srcImgCards={["../public/logo-html.png","../public/logo-css.png","../public/logo-bootstrap.png"]}
                     altImgCards={["Logo html","Logo css","Logo bootstrap"]}
