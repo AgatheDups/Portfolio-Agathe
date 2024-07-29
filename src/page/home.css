@@ -148,8 +148,8 @@ ul {
 }
 
 @media screen and (max-width: 940px) {
-    .timeline::before {
-        left: 29px;
+    .timeline::before, .progress-timeline{
+        left: 29px !important;
     }
 
     .timeline-item {
