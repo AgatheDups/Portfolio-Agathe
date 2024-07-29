@@ -38,7 +38,7 @@ export default function Portfolio (){
                     linkBtnGithub={"https://github.com/AgatheDups/Canvas-particules.git"}
                 />
                 <ProjetCard 
-                    titleCard={"Site Afpa formation DWWM"}
+                    titleCard={"Site Afpa formation DWWM TEST"}
                     srcImgCardProjet={"/public/logo-afpa.jpg"}
                     altImgCardProjet={"Logo du site FluffyRagdoll"}
                     srcImgCards={["../public/logo-html.png","../public/logo-css.png","../public/logo-bootstrap.png"]}
