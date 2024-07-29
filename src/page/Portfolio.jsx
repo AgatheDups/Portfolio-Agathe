@@ -3,7 +3,6 @@ import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import ProjetCard from "../component/ProjetCard";
 import "./portfolio.css"
-import "../../public/logo-afpa.jpg";
 
 export default function Portfolio (){
     return (
