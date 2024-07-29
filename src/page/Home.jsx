@@ -58,6 +58,7 @@ export default function Home(){
                 <div id="education">
                     <h3>Formation</h3>
                     <div className="timeline">
+                        <div className="progress-timeline"/>
                         <div className="timeline-item left">
                             <div className="content-timeline left">
                                 <p className="date">2024 - Présent</p>

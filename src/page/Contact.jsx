@@ -4,7 +4,6 @@ import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import "./contact.css"
 import emailjs from '@emailjs/browser';
-import { read } from "@popperjs/core";
 
 export default function Contact (){
     const form = useRef();

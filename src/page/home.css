@@ -1,39 +1,38 @@
 /* Home */
 
-h2{
+h2 {
     text-align: center;
 }
 
-h3{
+h3 {
     font-weight: 600;
+    font-size: 28px;
 }
 
-h5{
+h5 {
     font-weight: 550;
     margin: 10px 0;
 }
 
-.skills-subclass{
+.skills-subclass {
     text-align: center;
 }
 
-.logo-skills{
+.logo-skills {
     max-width: 140px;
     max-height: 90px;
     margin: 15px;
     transition: 0.2s ease-in-out;
 }
 
-.logo-skills:hover{
+.logo-skills:hover {
     transform: scale(1.23);
 }
 
-.subtitle {
-    color: var(--primary-color);
-    font-size: 1.2em;
-}
+/* Timeline */
 
 .timeline {
+    overflow: hidden;
     position: relative;
     padding: 50px 0;
 }
@@ -43,11 +42,10 @@ h5{
     position: absolute;
     width: 4px;
     background: var(--primary-color);
-    border-radius: 2px;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin: 10px 0px 10px -3px;
+    margin: 0px 0px 0px -3px;
 }
 
 .timeline-item {
@@ -73,13 +71,7 @@ h5{
     left: 0;
 }
 
-@media screen and (min-width: 940px) {
-    .timeline-item.right {
-        left: 50%;
-    }
-}
-
-.content-timeline{
+.content-timeline {
     top: -2px;
 }
 
@@ -122,11 +114,11 @@ h5{
     border: 1px solid #5e94a5;
     position: relative;
     border-radius: 6px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     transition: .2s ease-in-out;
 }
 
-.content-timeline:hover{
+.content-timeline:hover {
     transform: scale(1.04);
 }
 
@@ -143,8 +135,15 @@ h4 {
     font-size: 18px;
 }
 
-ul{
+ul {
     margin-top: 10px;
+}
+
+
+@media screen and (min-width: 940px) {
+    .timeline-item.right {
+        left: 50%;
+    }
 }
 
 @media screen and (max-width: 940px) {
@@ -165,14 +164,111 @@ ul{
         border-color: transparent white transparent transparent;
     }
 
-    .left::after, .right::after{
-        left: 15px; 
+    .left::after,
+    .right::after {
+        left: 15px;
     }
 
-    .content-timeline.left::before{
+    .content-timeline.left::before {
         left: -10px;
         border-width: 10px 10px 10px 0;
         border-color: transparent var(--primary-color) transparent transparent;
     }
+}
 
+/* Animating underline */
+
+#profile h3 {
+    overflow: hidden;
+    position: relative;
+}
+
+#profile h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.5s ease;
+}
+
+#profile:hover h3::after {
+    transform: translate3d(0, 0, 0);
+}
+
+
+#skills h3 {
+    overflow: hidden;
+    position: relative;
+}
+
+#skills h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 2px;
+    /* Épaisseur de la ligne */
+    background-color: rgb(255, 255, 255);
+    /* Couleur de la ligne */
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.5s ease;
+    /* Transition pour l'animation */
+}
+
+#skills:hover h3::after {
+    transform: translate3d(0, 0, 0);
+}
+
+
+#education h3 {
+    overflow: hidden;
+    position: relative;
+}
+
+#education h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 140px;
+    height: 2px;
+    /* Épaisseur de la ligne */
+    background-color: rgb(255, 255, 255);
+    /* Couleur de la ligne */
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.5s ease;
+    /* Transition pour l'animation */
+}
+
+#education:hover h3::after {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Animating timeline */
+
+.progress-timeline {
+    position: absolute;
+    top: 0%;
+    left: 49.9%;
+    transform: translateX(-51%);
+    height: 15%;
+    width: 4px;
+    background: #325063;
+    transition: .2s ease-in-out;
+    animation: moveDown 5s linear infinite;
+}
+
+
+@keyframes moveDown {
+    0% {
+    top: -55%;
+    }
+    100% {
+    top: 100%;
+    }
 }
