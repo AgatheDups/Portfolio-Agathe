@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Background from "../component/Background";
 import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import "./home.css"
@@ -7,7 +8,7 @@ import "./home.css"
 export default function Home(){
     return (
         <div>
-            <video className="bg-video" autoPlay loop muted src="/assets/fond-first-page.mp4" />
+            <Background/>
             <NavBar/>
             <div className="content">
                 <h2>Développeuse Web et Web Mobile</h2>

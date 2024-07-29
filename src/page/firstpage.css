@@ -11,19 +11,10 @@ header{
   position: relative;
   z-index: 30;
 }
-  
-.firstpage-video{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  object-fit: cover;
-}
+
 
 .text-first-page{
-  color: #f1f1f1;
+  color: var(--text-color);
   margin-bottom: 1rem;
   text-align: center;
   opacity: 0;
@@ -49,6 +40,6 @@ header{
 .ligne{
   width: 2px;
   height: 0px;
-  background-color: var(--background-color);
+  background-color: var(--text-color);
   margin-bottom: 1rem;
 }

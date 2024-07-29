@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Background from "../component/Background";
 import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import ProjetCard from "../component/ProjetCard";
@@ -7,7 +8,7 @@ import "./portfolio.css"
 export default function Portfolio (){
     return (
         <div>
-            <video className="bg-video" autoPlay loop muted src="/assets/fond-first-page.mp4" />
+            <Background/>
             <NavBar/>
             <div id="content-projets">
                 <ProjetCard 

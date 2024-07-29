@@ -8,13 +8,11 @@
 :root {
   --primary-color: #8AD2E8;
   --secondary-color: #000000;
-  --background-color: #ffffff;
-  --background-color-card: rgba(0,0,0,0.6);
-  --text-color: #ffffff;
+  --background-color-card: rgb(161 172 255 / 41%);
+  --text-color: #134060;
 }
 
 body{
-  background: #02060A;
   color: var(--text-color);
 }
 
@@ -24,7 +22,6 @@ section{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.4);
-  border: 1px solid #5e94a5;
 }
 
 .content{

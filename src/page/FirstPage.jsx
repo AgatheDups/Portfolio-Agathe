@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import "./firstpage.css"
 import gsap from 'gsap';
 import { useNavigate } from 'react-router-dom';
+import Background from '../component/Background';
 
 export default function FirstPage() {
     const titreRef = useRef(null);
@@ -25,7 +26,7 @@ export default function FirstPage() {
             <h1 ref={titreRef} className="text-first-page">Agathe Dupuis</h1>
             <div className="ligne" ref={ligneRef}></div>
             <p ref={subtitleRef} className="text-first-page">Bienvenu sur mon CV</p>
-            <video className='firstpage-video' autoPlay loop muted src="/assets/fond-first-page.mp4" />
+            <Background/>
             <button onClick={()=> goToHome()} className="btn-firstPage btn btn-danger" ref={btnRef}><a>Voir plus</a></button>
         </header>
     );

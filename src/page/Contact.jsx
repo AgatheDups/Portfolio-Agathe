@@ -4,6 +4,7 @@ import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import "./contact.css"
 import emailjs from '@emailjs/browser';
+import Background from "../component/Background";
 
 export default function Contact (){
     const form = useRef();
@@ -30,7 +31,7 @@ export default function Contact (){
 
     return (
         <div>
-            <video className="bg-video" autoPlay loop muted src="/assets/fond-first-page.mp4" />
+            <Background/>
             <NavBar/>
             <div className="content" id="content-contact">
                 <div className="info-contact col-md-5">
