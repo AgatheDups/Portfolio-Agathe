@@ -23,7 +23,7 @@ export default function FirstPage() {
             <h1 ref={titreRef} className="text-first-page">Agathe Dupuis</h1>
             <div className="ligne" ref={ligneRef}></div>
             <p ref={subtitleRef} className="text-first-page">Bienvenu sur mon CV</p>
-            <video className='firstpage-video' autoPlay loop muted src="/public/fond-first-page.mp4" />
+            <video className='firstpage-video' autoPlay loop muted src="/assets/fond-first-page.mp4" />
             <button className="btn-firstPage btn btn-danger" ref={btnRef}><a href="/acceuil">Voir plus</a></button>
         </header>
     );

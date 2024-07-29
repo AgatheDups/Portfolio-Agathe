@@ -18,7 +18,7 @@ export default function ProjetCard({ titleCard, srcImgCardProjet, altImgCardProj
                 </div>
                 <a href={linkBtnGithub} target="_blank" className="btn btn-danger btn-github">
                     Voir plus
-                    <img className="logo-btn-card" src="../public/logo-btn-github.png" />
+                    <img className="logo-btn-card" src="/assets/logo-btn-github.png" />
                 </a>
             </div>
         </div>

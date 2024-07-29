@@ -6,20 +6,20 @@ import "./contact.css"
 export default function Contact (){
     return (
         <div>
-            <video className="bg-video" autoPlay loop muted src="/public/fond-first-page.mp4" />
+            <video className="bg-video" autoPlay loop muted src="/assets/fond-first-page.mp4" />
             <NavBar/>
             <div className="content" id="content-contact">
                 <div className="info-contact col-md-5">
                     <a href="mailto:agathe.dps@hotmail.com">
-                        <img className="icon-contact" src=".//public/icon-envelope.png" />
+                        <img className="icon-contact" src="/assets/icon-envelope.png" />
                         agathe.dps@hotmail.com
                     </a>
                     <a href="tel:0674802697">
-                        <img className="icon-contact" src=".//public/icon-phone.png" />
+                        <img className="icon-contact" src="/assets/icon-phone.png" />
                         06 74 80 26 97
                     </a>
                     <a href="https://www.linkedin.com/in/agathe-dupuis-6205572ab/" target="_blank">
-                        <img className="icon-contact" src=".//public/icon-linkedin.png" />
+                        <img className="icon-contact" src="/assets/icon-linkedin.png" />
                         LinkedIn
                     </a>
                 </div>
