@@ -1,22 +1,27 @@
 /* eslint-disable react/prop-types */
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Footer from "../component/Footer";
 import NavBar from "../component/NavBar";
 import "./contact.css"
 import emailjs from '@emailjs/browser';
+import { read } from "@popperjs/core";
 
 export default function Contact (){
     const form = useRef();
+    const [mailSent, setMailSent] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
+        if(mailSent){
+            return
+        }
         emailjs
         .sendForm('service_6yjr2vm', 'template_io72mpb', form.current, {
           publicKey: 'ZlnVL4Dadk8igzUm9',
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            setMailSent(true)
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -49,7 +54,7 @@ export default function Contact (){
                         <input type="email" id="email" name="from_mail" placeholder="Email" required/>
                         <input type="text" id="subject" name="subject" placeholder="Sujet" required/>
                         <textarea id="message" name="message" placeholder="Message" required/>
-                        <button type="submit" className="btn btn-danger">Envoyer</button>
+                        <button type="submit" className={`btn ${mailSent ? "btn-success" : "btn-danger"}`}>{mailSent ? "Merci !" : "Envoyer"}</button>
                     </form>
                 </div>
             </div>
