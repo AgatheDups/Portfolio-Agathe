@@ -28,9 +28,11 @@ export default function Home(){
                     <div className="skills-subclass">
                         <h5>Frameworks & Bibliothèques</h5>
                         <img className="logo-skills" src="/assets/logo-react.png" alt="Logo react" />
+                        <img className="logo-skills" src="/assets/logo-svelte.png" alt="Logo svelte" />
                         <img className="logo-skills" src="/assets/logo-vue.png" alt="Logo vue" />
                         <img className="logo-skills" src="/assets/logo-greensock.png" alt="Logo greensock" />
                         <img className="logo-skills" src="/assets/logo-bootstrap.png" alt="Logo bootstrap" />
+                        <img className="logo-skills" src="/assets/logo-tailwind.png" alt="Logo tailwind" />
                     </div>
                     <div className="skills-subclass">
                         <h5>Technologies back-end</h5>
