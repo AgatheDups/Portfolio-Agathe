@@ -64,7 +64,7 @@ export default function Home(){
                         <div className="progress-timeline"/>
                         <div className="timeline-item left">
                             <div className="content-timeline left">
-                                <p className="date">2024 - Présent</p>
+                                <p className="date">2024 - 2025</p>
                                 <h4>Titre professsionnel en développement Web et Web Mobile</h4>
                                 <p>AFPA</p>
                                 <ul>
