@@ -65,11 +65,12 @@ export default function Home(){
                         <div className="timeline-item left">
                             <div className="content-timeline left">
                                 <p className="date">2024 - Présent</p>
-                                <h4>Formation en développement Web et Web Mobile</h4>
+                                <h4>Titre professsionnel en développement Web et Web Mobile</h4>
                                 <p>AFPA</p>
                                 <ul>
                                     <li>{"Développement d'applications web complexes"}</li>
                                     <li>Développement front-end avec React</li>
+                                    <li>Développement back-end avec Php et Symfony</li>
                                 </ul>
                             </div>
                         </div>
